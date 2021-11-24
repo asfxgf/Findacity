@@ -1,0 +1,11 @@
+<!-- app/views/travel/search.html.erb -->
+<div class="container">
+	<h1><%= image_tag @icon %><b><%= @city_information["name"] %></b>, <%= @city_information["sys"]["country"] %></h1>
+	<h2><b>Date : </b><%= Time.now.strftime("%d/%m/%Y %H:%M") %></h2>
+	<h2><b>Sky : </b><%= @city_information["weather"][0]["main"] %> | <%= @city_information["weather"][0]["description"] %></h2>
+	<h2><b>Temperature : </b><%= to_celcius(@city_information["main"]["temp"])%>  (<%= to_fahrenheit(@city_information["main"]["temp"])%>)</h2>
+	<h2><b>Humidity : </b><%= @city_information["main"]["humidity"]%>%</h2>
+	<h1>Location : </h1>
+	<h2>Lon <%= @city_information["coord"]["lon"] %></h2>
+	<h2>Lat <%= @city_information["coord"]["lat"] %></h2>
+</div>
