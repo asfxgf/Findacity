@@ -8,4 +8,5 @@
 	<h1>Location : </h1>
 	<h2>Lon <%= @city_information["coord"]["lon"] %></h2>
 	<h2>Lat <%= @city_information["coord"]["lat"] %></h2>
+	<%= link_to "Search an other city", "/", class: "backlink" %>
 </div>
