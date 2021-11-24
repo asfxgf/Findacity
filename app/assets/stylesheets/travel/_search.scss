@@ -6,3 +6,35 @@
   color: #fb8500;
   font-weight: 700;
 }
+
+#map {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+  }
+
+  #map {
+	position: relative;
+	text-align: center;
+  	height: 60vh;
+  	width: 60vh;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+  }
+
+    #map {
+	position: relative;
+	text-align: center;
+  	height: 30vh;
+  	width: 30vh;
+  }
+}

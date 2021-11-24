@@ -20,7 +20,9 @@ ActiveStorage.start()
 
 // External imports
 import "bootstrap";
-
+//
+//*= require mapbox-gl
+//= require_tree .
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
